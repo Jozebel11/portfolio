@@ -130,8 +130,11 @@ section{
         color: var(--color-secondary);
         pointer-events: none;
         text-shadow:3px 5px 10px var(--color-black);
+        
+        
 
     }
+    
 
 }
 
@@ -275,6 +278,7 @@ section{
 }
 
 
+
 /*Independed Components*/
 .btn-con1{
     display: flex;
@@ -293,8 +297,9 @@ section{
         }
         &:hover{
             color: var(--color-secondary);
-            
         }
+    
+           
         
     }
 }
@@ -321,6 +326,7 @@ section{
         border-radius: 50%;
         padding: .5rem;
         color: var(--color-black);
+        
 
     }
     &::before{
@@ -360,187 +366,115 @@ section{
 
 //Carousel
 
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .projects-container{
+        display: flex;
+        justify-content: center;
+        margin:3rem 0 0.5rem 0;
 
-
-
-#carousel {
-    position: absolute;
-    height: 200px;
-    width: 810px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.arrow {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    text-align: center;
-    font-size: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    color: #228291;
-    line-height: 30px;
-    margin-top: 85px;
-    z-index: 1000;
-}
-
-.arrow-right {
-    left: 780px;
-}
-
-.item {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
-}
-
-$level2-height: 150px;
-$level2-width: 110px;
-$level1-height: 180px;
-$level1-width: 130px;
-$level0-height: 200px;
-$level0-width: 150px;
-
-$level-2-left: 650px;
-$level-1-left: 500px;
-$level0-left: 330px;
-$level1-left: 180px;
-$level2-left: 50px;
-
-
-.level-2 {
-    height: $level2-height;
-    width: $level2-width;
-    line-height: $level2-height;
-    background-color: #228291;
-    left: $level-2-left;
-    margin-top: 25px;
-}
-
-.level-1 {
-    height: $level1-height;
-    width: $level1-width;
-    line-height: $level1-height;
-    background-color: #6796E5;
-    left: $level-1-left;
-    margin-top: 10px;
-}
-
-.level0 {
-    height: $level0-height;
-    width: $level0-width;
-    line-height: $level0-height;
-    background-color: #4EC9E1;
-    left: $level0-left;
-}
-
-.level1 {
-    height: $level1-height;
-    width: $level1-width;
-    line-height: $level1-height;
-    background-color: #6796E5;
-    margin-top: 10px;
-    left: $level1-left;
-}
-
-.level2 {
-    height: $level2-height;
-    width: $level2-width;
-    line-height: $level2-height;
-    background-color: #228291;
-    margin-top: 25px;
-    left: $level2-left;
-}
-
-.left-enter {
-    opacity: 0;
-    left: $level2-left - $level2-width;
-    height: $level2-height - 30;
-    width: $level2-width - 20;
-    line-height: $level2-height - 30;
-    margin-top: 40px;
-}
-
-.left-enter.left-enter-active {
-    opacity: 1;
-    left: $level2-left;
-    height: $level2-height;
-    width: $level2-width;
-    line-height: $level2-height;
-    margin-top: 25px;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
-}
-
-.left-leave {
-    opacity: 1;
-    left: $level-2-left;
-    height: $level2-height;
-    width: $level2-width;
-    line-height: $level2-height;
-    margin-top: 25px;
-}
-
-.left-leave.left-leave-active {
-    left: $level-2-left + $level2-width + 20;
-    opacity: 0;
-    height: $level2-height - 30;
-    line-height: 120px;
-    margin-top: 40px;
-    width: $level2-width - 20;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
-}
-
-.right-enter {
-    opacity: 0;
-    left: $level-2-left + $level2-width;
-    height: $level2-height - 30;
-    width: $level2-width - 20;
-    line-height: $level2-height - 30;
-    margin-top: 40px;
-}
-
-.right-enter.right-enter-active {
-    left: $level-2-left;
-    opacity: 1;
-    height: $level2-height;
-    margin-top: 25px;
-    line-height: $level2-height;
-    width: $level2-width;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
-}
-
-.right-leave {
-    left: $level2-left;
-    height: $level2-height;
-    opacity: 1;
-    margin-top: 25px;
-    line-height: $level2-height;
-    width: $level2-width;
-}
-
-.right-leave.right-leave-active {
-    left: $level2-left - $level2-width;
-    opacity: 0;
-    height: $level2-height - 30;
-    width: $level2-width - 20;
-    line-height: $level2-height - 30;
-    margin-top: 40px;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
-}
-
-.noselect {
-    -webkit-user-select: none; 
-     -khtml-user-select: none; 
-       -moz-user-select: none; 
-        -ms-user-select: none;  
-            user-select: none;
+    }
+  .carousel {
+    overflow-x: auto;
+    overflow-y: show;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 1.5rem;
+    //margin: 10px 0 0 0;
+    //padding: 10px 0 20px 0;
+    margin:1rem 0 0 0;
+    padding: 1rem 0 1rem 0;
+    min-width: 400px;
+    .card {
+        scroll-snap-align: start;
+        display: flex;
+        flex-shrink: 0;
+        padding: 5px 10px 10px 10px;
+        flex-direction: column;
+        //width: 400px;
+        width: 20rem;
+        margin: 0 15px;
+        background-color: white;
+        border-radius: 5%;
+        overflow: hidden;
+        box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+        transition: all .3s cubic-bezier(0,0,.5,1);
+        &:hover{
+            box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+            transform: scale3d(1.02,1.02,1.02)
+              
+        }
+        .content{
+            height: 150px;
+            padding: 30px 10px 0 10px;
+            h1 {
+                font-size: 28px;
+                line-height: 1.14286;
+                font-weight: 600;
+                letter-spacing: .007em;
+                padding: 22.4px 0 0 10px;
+              }
+              
+              h2 {
+                font-size: 12px;
+                line-height: 1.33337;
+                font-weight: 600;
+                letter-spacing: -.01em;
+                text-transform: uppercase;
+                color: #6e6e73;
+                margin-bottom: 13px;
+              }
+              
+              h3 {
+                font-size: 28px;
+                line-height: 1.14286;
+                font-weight: 600;
+                letter-spacing: -.01em;
+                color: #1d1d1f;
+                margin-bottom: 13px;
+                text-transform: capitalize;
+              }
+              
+              p {
+                font-size: 17px;
+                line-height: 1.23536;
+                font-weight: 400;
+                letter-spacing: -.022em;
+                color: #1d1d1f;
+                margin-bottom: 5px;
+                text-transform: lowercase;
+              }
+              
+              img {
+                border-radius: 5%;
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                overflow: hidden;
+                
+              }
+          }
+      }
+   
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    all: unset;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    background: gray;
+    margin-top: 20px;
+  }
+  
+  .dot:focus {
+    outline: 1px solid blue;
+  }
 }
