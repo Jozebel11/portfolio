@@ -349,6 +349,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  min-width: 800px;
 }
 .carousel-container .projects-container {
   display: flex;
@@ -356,15 +357,10 @@ section {
   margin: 3rem 0 0.5rem 0;
 }
 .carousel-container .carousel {
-  overflow-x: auto;
-  overflow-y: show;
-  display: flex;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  scroll-padding: 0 1.5rem;
-  margin: 1rem 0 0 0;
-  padding: 1rem 0 1rem 0;
-  min-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px 0 0 0;
+  padding: 10px 0 20px 0;
 }
 .carousel-container .carousel .card {
   scroll-snap-align: start;
@@ -372,10 +368,12 @@ section {
   flex-shrink: 0;
   padding: 5px 10px 10px 10px;
   flex-direction: column;
-  width: 20rem;
-  margin: 0 15px;
+  width: 30rem;
+  height: 15rem;
+  margin-top: 15px;
+  margin-left: 75px;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
@@ -414,7 +412,7 @@ section {
   text-transform: capitalize;
 }
 .carousel-container .carousel .card .content p {
-  font-size: 17px;
+  font-size: 12px;
   line-height: 1.23536;
   font-weight: 400;
   letter-spacing: -0.022em;
