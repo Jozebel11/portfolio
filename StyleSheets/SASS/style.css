@@ -243,13 +243,16 @@ section {
 }
 .about-stats .skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5rem;
   padding-top: 2rem;
 }
 .about-stats .skill {
   display: flex;
   flex-direction: row;
+}
+.about-stats .skill i {
+  color: var(--color-secondary);
 }
 .about-stats .skill h5 {
   padding-left: 1rem;
@@ -467,4 +470,38 @@ section {
 }
 .carousel-container .dot:focus {
   outline: 1px solid blue;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.game-container .grid {
+  width: 402px;
+  height: 402px;
+  border: black solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-container .grid div {
+  width: 20px;
+  height: 20px;
+}
+.game-container .invader {
+  background-color: purple;
+  border-radius: 10px;
+}
+.game-container .shooter {
+  background-color: red;
+  border-radius: 10px;
+}
+.game-container .laser {
+  background-color: orange;
+}
+.game-container .boom {
+  background-color: yellow;
+}
+.game-container .stop {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -249,7 +249,7 @@ section{
     }
     .skills{
         display:grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 5rem;
         padding-top: 2rem;
 
@@ -257,6 +257,9 @@ section{
     .skill{
         display: flex;
         flex-direction: row;
+        i {
+            color: var(--color-secondary);
+        }
         h5{
             padding-left: 1rem;
         }
@@ -504,4 +507,45 @@ section{
   .dot:focus {
     outline: 1px solid blue;
   }
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .grid{
+        width: 402px;
+        height: 402px;
+        border: black solid 1px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid div{
+        width: 20px;
+        height: 20px;
+    }
+    .invader {
+        background-color: purple;
+        border-radius: 10px;
+    }
+    .shooter {
+        background-color: red;
+        border-radius: 10px;
+    }
+    
+    .laser{
+        background-color: orange;
+    }
+    
+    .boom {
+        background-color: yellow;
+    }
+    .stop{
+        margin-top: 20px;
+        
+    
+    }
+
+
+
 }
