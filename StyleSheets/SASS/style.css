@@ -108,7 +108,7 @@ section {
   justify-content: center;
 }
 .controlls .active-btn {
-  background-color: var(--color-primary) !important;
+  background-color: transparent !important;
 }
 .controlls .active-btn i {
   color: var(--color-black) !important;
@@ -118,7 +118,7 @@ section {
 .control {
   padding: 1rem;
   cursor: pointer;
-  background-color: var(--color-primary);
+  background-color: transparent;
   width: 55px;
   height: 55px;
   border-radius: 50%;
