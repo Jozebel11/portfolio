@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = 8000;
 
-app.use(express.static('/StyleSheets'))
+app.use('/StyleSheets/SASS',express.static('StyleSheets/SASS'))
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
