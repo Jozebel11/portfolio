@@ -618,7 +618,7 @@ section {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control .textArea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -628,7 +628,7 @@ section {
   border: none;
   background-color: white;
   width: 100%;
-  color: var(--color-white);
+  color: #242423;
   resize: none;
 }
 .contact-content-con .right-contact .i-c-2 {
@@ -639,7 +639,15 @@ section {
 }
 .contact-content-con .right-contact .submit-btn {
   display: flex;
-  justify-content: flex-start;
+  border-radius: 25px;
+  background-color: var(--color-secondary);
+  border: none;
+  color: var(--color-white);
+  padding: 7px 14px;
+  font-weight: 1rem;
+}
+.contact-content-con .right-contact .submit-btn:hover {
+  cursor: pointer;
 }
 
 .about-container .left-about p {

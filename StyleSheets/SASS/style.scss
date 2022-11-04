@@ -661,7 +661,7 @@ section{
         padding-right: 5rem;
         .input-control {
             margin: 1.5rem 0;
-            input, textarea {
+            input, .textArea {
                 border-radius: 30px;
                 font-weight: inherit;
                 font-size: inherit;
@@ -671,7 +671,7 @@ section{
                 border: none;
                 background-color: white;
                 width: 100%;
-                color: var(--color-white);
+                color: #242423;
                 resize: none;
             }
         }
@@ -683,7 +683,15 @@ section{
         }
         .submit-btn {
             display: flex;
-            justify-content: flex-start;
+            border-radius: 25px;
+            background-color: var(--color-secondary);
+            border: none;
+            color: var(--color-white);
+            padding: 7px 14px ;
+            font-weight: 1rem;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
