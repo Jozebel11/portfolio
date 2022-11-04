@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const PORT = 8000;
+
+require("dotenv").config();
 
 app.use('/StyleSheets/SASS',express.static('StyleSheets/SASS'))
 
@@ -10,6 +11,6 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`)
-})
+app.listen(process.env.PORT || PORT, () => {
+    console.log("Server is running, you better catch it!");
+  });

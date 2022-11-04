@@ -4,7 +4,7 @@
   "description": "Joseph Hardwicke Portfolio",
   "main": "index.js",
   "scripts": {
-    "start":"node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d resources",
     "dev": "nodemon server.js & npm run scss",
@@ -13,9 +13,9 @@
   "author": "Joseph Hardwicke",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "firebase": "^9.13.0",
     "nodemon": "^2.0.20"
   }
-  
 }
