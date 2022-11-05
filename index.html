@@ -168,6 +168,12 @@
                         <button class="stop">Stop Game</button>
                         <button class="restart">Restart Game</button>
                     </div>
+                    <div class="game-instructions">
+                        <p>< = Left</p>
+                        <p>> = Right</p>
+                        <p>^ = Shoot</p>
+                        <p>Keyboard needed to play!</p>
+                    </div>
                 </div>
             </section>
             <section class="section sec5 contact" id="contact">
@@ -223,15 +229,14 @@
                         <div class="right-contact">
                             <form action="https://formsubmit.co/jjhardwicke@hotmail.co.uk" method="POST" class="contact-form">
                                 <div class="input-control i-c-2">
-                                    <input type="hidden" name="_next" value="https://hardwicke-portfolio.herokuapp.com">
-                                    <input type="text" required placeholder="YOUR NAME">
-                                    <input type="email" required placeholder="YOUR EMAIL">
+                                    <input type="text" name="name" required placeholder="YOUR NAME">
+                                    <input type="email" name="email" required placeholder="YOUR EMAIL">
                                 </div>
                                 <div class="input-control">
                                     <input type="text" required placeholder="ENTER SUBJECT">
                                 </div>
                                 <div class="input-control">
-                                    <input class="textArea" type="text" name="message" placeholder="Message Here..." required>
+                                    <textarea class="textArea" type="text" name="message" rows="6" placeholder="Message Here..." required></textarea>
                                 </div>
                                 <button class="submit-btn" type="submit">Send</button>
                             </form>
