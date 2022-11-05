@@ -304,20 +304,27 @@ section {
   font-size: 2.5rem;
 }
 .about-services .services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 2rem;
 }
 .about-services .service {
   margin: 1rem;
-  transform: translateY(-5px);
   border-radius: 5px;
-  width: 5rem;
 }
 .about-services .service h5 {
   margin-left: 0.3rem;
   margin-top: 0.3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-secondary);
+}
+.about-services .service p {
+  text-align: center;
+  word-spacing: 0.5rem;
+  margin-top: 1rem;
 }
 .about-services .service-container {
   margin-top: 1rem;
