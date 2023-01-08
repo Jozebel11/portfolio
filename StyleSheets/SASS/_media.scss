@@ -269,6 +269,12 @@
         grid-template-columns: repeat(2, 1fr);
 
     }
+    .contact-item{
+        span {
+            flex-wrap: nowrap;
+        }
+    }
+
 }
 @media screen and (max-width:700px){
     .container{

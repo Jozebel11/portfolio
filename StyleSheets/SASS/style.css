@@ -8,14 +8,14 @@
 :root {
   --color-primary: #242423;
   --color-secondary: #b0c4b1;
-  --color-white: #f7f7f2;
+  --color-white: rgb(248,248,248);
   --color-black: #121113;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.2)
   --br-sm-1: 14px;
 }
 
 .light-mode {
-  --color-primary: #e8eddf;
+  --color-primary: rgb(248,248,248);
   --color-secondary: #b0c4b1;
   --color-white: #403d39;
   --color-black: #121113;
@@ -125,7 +125,7 @@ section {
   background-color: transparent !important;
 }
 .controlls .active-btn i {
-  color: var(--color-black) !important;
+  color: var(--color-secondary) !important;
 }
 
 .control {
@@ -143,7 +143,7 @@ section {
 }
 .control i {
   font-size: 1.5rem;
-  color: var(--color-secondary);
+  color: var(--color-white);
   pointer-events: none;
   text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
 }
@@ -560,8 +560,6 @@ section {
 }
 .contact-content-con .left-contact {
   flex: 2;
-  padding-left: 15rem;
-  padding-right: 15rem;
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
@@ -575,7 +573,9 @@ section {
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  min-width: 380px;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
@@ -591,6 +591,9 @@ section {
   align-items: center;
   font-size: 1.3rem;
   color: var(--color-secondary);
+}
+.contact-content-con .left-contact .contact-info .contact-item .mobile-info {
+  margin-right: 80px;
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
@@ -889,6 +892,9 @@ section {
   }
   .about-services .services {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-item span {
+    flex-wrap: nowrap;
   }
 }
 @media screen and (max-width: 700px) {
