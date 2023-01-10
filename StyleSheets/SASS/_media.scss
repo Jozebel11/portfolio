@@ -103,20 +103,8 @@
         margin-bottom: 6rem;
     }
 
-    .contact-item{
-        flex-direction: column;
-        margin: 1rem 0;
-        p{
-            font-size: 15px;
-            color: var(--color-grey-2);
-        }
-        span{
-            font-size: 15px;
-        }
-        .icon{
-            grid-template-columns: 25px 1fr;
-        }
-    }
+    
+
 
 
     .main-title{
@@ -274,14 +262,14 @@
             flex-wrap: nowrap;
         }
     }
+    .about-stats .skills{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 @media screen and (max-width:700px){
     .container{
         padding: 7rem 3rem;
-    }
-    .about-stats .skills{
-        grid-template-columns: repeat(2, 1fr);
     }
     .about-container .right-about{
         grid-template-columns: repeat(1, 1fr);
@@ -301,4 +289,20 @@
             }
         }
     }
+}
+
+@media screen and (max-width:1080px){
+    .about-container{
+        align-items: center;
+        
+        
+        .left-about{
+            margin-left: 0;
+        }
+        .right-about{
+           margin-left: 0px; 
+        }
+    }
+
+
 }

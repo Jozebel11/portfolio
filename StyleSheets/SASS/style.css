@@ -234,12 +234,15 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 50px;
 }
 .about-container .left-about {
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
+  margin-left: 200px;
+  margin-bottom: 50px;
 }
 .about-container .left-about h4 {
   font-size: 1.5rem;
@@ -250,10 +253,12 @@ section {
 }
 .about-container .left-about p {
   word-spacing: 0.5rem;
+  max-width: 600px;
 }
 .about-container .right-about {
   display: flex;
   flex-direction: column;
+  margin-left: 300px;
 }
 .about-container .right-about h4 {
   font-size: 1.5rem;
@@ -264,6 +269,7 @@ section {
 }
 .about-container .right-about p {
   word-spacing: 0.5rem;
+  max-width: 600px;
 }
 
 .about-stats {
@@ -278,7 +284,7 @@ section {
 }
 .about-stats .skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 5rem;
   padding-top: 2rem;
 }
@@ -325,6 +331,7 @@ section {
   text-align: center;
   word-spacing: 0.5rem;
   margin-top: 1rem;
+  max-width: 600px;
 }
 .about-services .service-container {
   margin-top: 1rem;
@@ -755,20 +762,6 @@ section {
   .contact-content-con .right-contact {
     margin-bottom: 6rem;
   }
-  .contact-item {
-    flex-direction: column;
-    margin: 1rem 0;
-  }
-  .contact-item p {
-    font-size: 15px;
-    color: var(--color-grey-2);
-  }
-  .contact-item span {
-    font-size: 15px;
-  }
-  .contact-item .icon {
-    grid-template-columns: 25px 1fr;
-  }
   .main-title h2 {
     font-size: 2rem;
   }
@@ -896,13 +889,13 @@ section {
   .contact-item span {
     flex-wrap: nowrap;
   }
+  .about-stats .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
-  }
-  .about-stats .skills {
-    grid-template-columns: repeat(2, 1fr);
   }
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
@@ -918,5 +911,16 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .about-container {
+    align-items: center;
+  }
+  .about-container .left-about {
+    margin-left: 0;
+  }
+  .about-container .right-about {
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
