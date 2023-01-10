@@ -627,6 +627,7 @@ section{
                 justify-content: space-around;
                 flex-wrap: nowrap;
                 min-width: 380px;
+
                 p {
                     margin: .3rem 0 !important;
                     padding: 0 !important;
@@ -634,7 +635,7 @@ section{
                 .icon {
                     display: grid;
                     grid-template-columns: 40px 1fr;
-                    margin-right: 2rem;
+                    margin-right: 0.5rem;
                     i {
                         display: flex;
                         align-items: center;
@@ -643,7 +644,7 @@ section{
                     }
                 }
                 .mobile-info{
-                    margin-right: 80px;
+                    margin-right: 55px;
                 }
             }
         }

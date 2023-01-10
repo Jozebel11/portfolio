@@ -591,7 +591,7 @@ section {
 .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: grid;
   grid-template-columns: 40px 1fr;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
   display: flex;
@@ -600,7 +600,7 @@ section {
   color: var(--color-secondary);
 }
 .contact-content-con .left-contact .contact-info .contact-item .mobile-info {
-  margin-right: 80px;
+  margin-right: 55px;
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
