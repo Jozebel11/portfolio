@@ -582,7 +582,7 @@ section {
   align-items: center;
   justify-content: space-around;
   flex-wrap: nowrap;
-  min-width: 380px;
+  min-width: 305px;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
@@ -591,7 +591,7 @@ section {
 .contact-content-con .left-contact .contact-info .contact-item .icon {
   display: grid;
   grid-template-columns: 40px 1fr;
-  margin-right: 0.5rem;
+  margin-right: 0.1rem;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
   display: flex;
@@ -752,6 +752,12 @@ section {
     padding-left: 0;
     padding-right: 0;
   }
+  .contact-item .icon span {
+    font-size: 0.9rem;
+  }
+  .contact-item p {
+    font-size: 0.9rem;
+  }
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
@@ -761,6 +767,9 @@ section {
   }
   .contact-content-con .right-contact {
     margin-bottom: 6rem;
+  }
+  .mobile-info {
+    margin-left: 5px;
   }
   .main-title h2 {
     font-size: 2rem;

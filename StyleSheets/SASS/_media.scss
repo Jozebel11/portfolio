@@ -91,6 +91,12 @@
         }
         
     }
+    .contact-item .icon span{
+        font-size: 0.9rem;
+    }
+    .contact-item p{
+        font-size: 0.9rem;
+    }
     .contact-content-con .right-contact .i-c-2{
         flex-direction: column;
     }
@@ -101,6 +107,9 @@
 
     .contact-content-con .right-contact{
         margin-bottom: 6rem;
+    }
+    .mobile-info{
+        margin-left: 5px;
     }
 
     

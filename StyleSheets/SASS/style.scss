@@ -626,7 +626,7 @@ section{
                 align-items: center;
                 justify-content: space-around;
                 flex-wrap: nowrap;
-                min-width: 380px;
+                min-width: 305px;
 
                 p {
                     margin: .3rem 0 !important;
@@ -635,7 +635,7 @@ section{
                 .icon {
                     display: grid;
                     grid-template-columns: 40px 1fr;
-                    margin-right: 0.5rem;
+                    margin-right: 0.1rem;
                     i {
                         display: flex;
                         align-items: center;
